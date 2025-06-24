@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question 6 - Redirection Based on User Agent</title>
+    <link rel="stylesheet" href="styles/globals.css" />
+  </head>
+  <body>
+    <main style="max-width: 700px; margin: auto;">
+      <h1 style="color: #404041; margin-bottom: 1rem;">6. Redirection Based on User Agent</h1>
+
+      <h2>Response</h2>
+      <div class="response-block">Hi! José Miguel from Cloudflare Support here.
+
+          You're right — Page Rules can't match on user agent headers. But we can achieve this using a
+          <strong>Single Redirect Rule</strong> in Cloudflare.
+          You'll want to create a redirect rule where the condition is:
+          <code>http.user_agent contains "MSIE 8.0"</code>
+          Then set your desired redirect target URL.
+      </div>
+
+      <h2>Thought Process</h2>
+      <p>
+        Page Rules don't support matching against request headers like user-agent. Knowing that, I looked into the
+        <a href="https://developers.cloudflare.com/rules/url-forwarding/" target="_blank" rel="noopener noreferrer">
+          Redirect Rules
+        </a>
+        feature under Cloudflare Rules.
+      </p>
+      <p>
+        Since this is a static condition and not something dynamic or needing complex logic, a Single Redirect works best.
+      </p>
+
+      <h2>Tools I Would Use</h2>
+      <ul>
+        <li><strong>Cloudflare Dashboard</strong> — to create and configure the redirect rule</li>
+        <li><strong>curl -A</strong> — to test and simulate different user agents</li>
+      </ul>
+
+      <h2>References</h2>
+      <ul>
+        <li>
+          <a href="https://developers.cloudflare.com/rules/" target="_blank" rel="noopener noreferrer">
+            Cloudflare Rules Overview
+          </a>
+        </li>
+        <li>
+          <a href="https://developers.cloudflare.com/rules/url-forwarding/" target="_blank" rel="noopener noreferrer">
+            Redirect Rules Documentation
+          </a>
+        </li>
+      </ul>
+
+      <a href="index.html">
+        <button class="cta-button">← Back to Index</button>
+      </a>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Question 3 - Workers not applied</title>
+    <link rel="stylesheet" href="styles/globals.css" />
+  </head>
+  <body>
+    <main style="max-width: 700px; margin: auto;">
+      <h1>3. Workers not applied</h1>
+
+      <h2>Response</h2>
+      <div class="response-block">
+        Hi there, José Miguel from Cloudflare Support!
+        
+        I know it can be confusing when things work in the debugger but not live — been there myself. This usually happens when the Worker isn't attached to a route that matches real traffic.<br />
+        Check the “Triggers” section in the dashboard and make sure you've set a route like <code>example.com/*</code>.
+        Let me know if that helps or if you'd like a hand checking the setup.
+      </div>
+
+      <h2>Thought Process</h2>
+      <h3>How I approached this question</h3>
+      <p>
+        I don't have direct experience deploying Workers through the Dashboard — my answer is based on research and Cloudflare's official documentation. I reviewed several key sections to confirm the relationship between Worker triggers, routes, and proxied traffic.
+      </p>
+
+      <h3>Key Concepts Researched</h3>
+      <ul>
+        <li>Workers only run on requests that match an explicitly defined route.</li>
+        <li>The DNS record must be proxied for the Worker to execute.</li>
+        <li>The Debugger tool runs in isolation and doesn't confirm full deployment behavior.</li>
+      </ul>
+
+      <h2>References</h2>
+      <ul>
+        <li>
+          <a href="https://developers.cloudflare.com/workers/platform/routes/" target="_blank" rel="noopener noreferrer" style="color: #f48120;">
+            Defining routes for Workers
+          </a>
+        </li>
+      </ul>
+
+      <a href="index.html">
+        <button class="cta-button">← Back to Index</button>
+      </a>
+    </main>
+  </body>
+</html>

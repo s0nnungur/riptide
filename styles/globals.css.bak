@@ -59,7 +59,7 @@ code {
   border-radius: 4px;
 }
 
-/* styles/globals.css */
+/* CTA button */
 button.cta-button {
   margin-top: 2rem;
   padding: 0.5rem 1rem;

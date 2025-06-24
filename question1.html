@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Question 1 - Site down, your nameservers are down</title>
+    <link rel="stylesheet" href="styles/globals.css" />
+  </head>
+  <body>
+    <main style="max-width: 700px; margin: auto;">
+      <h1>1. Site down, your nameservers are down</h1>
+
+      <h2>Response</h2>
+      <div class="response-block">
+        Hi, José Miguel here from Cloudflare Support — thanks for reaching out!
+        
+        Your domain isn't using Cloudflare's nameservers, so Cloudflare isn't managing your DNS.
+        This means any site access issues are likely caused by your current DNS provider or registrar.
+        Please check your domain's nameserver settings and DNS records with your provider.
+        If you want, I can help you switch your domain to use Cloudflare's nameservers and manage your DNS here.
+      </div>
+
+      <h2>Thought Process</h2>
+      <p><strong>Tools used:</strong> <code>nslookup</code> (Windows), <code>dig</code> (Linux), Cloudflare documentation</p>
+
+      <h3>DNS Resolution Checks</h3>
+      <pre>
+C:\Users\josem&gt;nslookup example.com
+Server:  UnKnown
+Address:  88.214.178.1
+
+Non-authoritative answer:
+Name:    example.com
+Addresses: 96.7.128.175, 23.192.228.80, ...
+      </pre>
+      <ul>
+        <li>Server: Unknown → DNS IP known, hostname unresolved</li>
+        <li>Non-authoritative answer → Info is cached</li>
+      </ul>
+      <p>Conclusion: DNS is working — Cloudflare nameservers are up.</p>
+
+      <h3>Authoritative Nameservers</h3>
+      <pre>
+C:\Users\josem&gt;nslookup -type=NS example.com
+
+Non-authoritative answer:
+example.com nameserver = a.iana-servers.net
+example.com nameserver = b.iana-servers.net
+      </pre>
+      <p>The domain is <strong>NOT</strong> using Cloudflare nameservers.</p>
+
+      <h2>References</h2>
+      <ul>
+        <li>
+          <a href="https://developers.cloudflare.com/dns/get-started/" target="_blank" rel="noopener noreferrer">
+            Getting Started with Cloudflare DNS
+          </a>
+        </li>
+      </ul>
+
+      <a href="index.html">
+        <button class="cta-button">← Back to Index</button>
+      </a>
+    </main>
+  </body>
+</html>
