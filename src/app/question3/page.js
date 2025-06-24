@@ -2,26 +2,32 @@ import Link from 'next/link';
 
 export default function Question3() {
   return (
-    <main style={{
-      padding: '2rem',
-      maxWidth: '700px',
-      margin: 'auto',
-      fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-      color: '#333',
-      lineHeight: '1.6',
-    }}>
+    <main
+      style={{
+        padding: '2rem',
+        maxWidth: '700px',
+        margin: 'auto',
+        fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+        color: '#333',
+        lineHeight: '1.6',
+      }}
+    >
       <h1 style={{ color: '#404041', marginBottom: '1rem' }}>
         3. Workers not applied
       </h1>
       <h2 style={{ color: '#404041' }}>Response</h2>
-<p className="response-block">
-  Hi there, José Miguel from Cloudflare Support!<br /><br />
-  I know it can be confusing when things work in the debugger but not live — been there myself. This usually happens when the Worker isn&apos;t attached to a route that matches real traffic.
-  <br /><br />
-  Check the “Triggers” section in the dashboard and make sure you&apos;ve set a route like <code>example.com/*</code>. 
-  <br /><br />
-  Let me know if that helps or if you&apos;d like a hand checking the setup.
-</p>
+      <div className="response-block">
+        Hi there, José Miguel from Cloudflare Support!
+        <br />
+        <br />
+        I know it can be confusing when things work in the debugger but not live — been there myself. This usually happens when the Worker isn&apos;t attached to a route that matches real traffic.
+        <br />
+        <br />
+        Check the “Triggers” section in the dashboard and make sure you&apos;ve set a route like <code>example.com/*</code>.
+        <br />
+        <br />
+        Let me know if that helps or if you&apos;d like a hand checking the setup.
+      </div>
 
       <h2 style={{ color: '#404041' }}>Thought Process</h2>
       <h3>How I approached this question</h3>
@@ -36,25 +42,33 @@ export default function Question3() {
         <li>The Debugger tool runs in isolation and doesn&apos;t confirm full deployment behavior.</li>
       </ul>
 
-        <h2 style={{ color: '#404041' }}>References</h2>      <ul>
+      <h2 style={{ color: '#404041' }}>References</h2>
+      <ul>
         <li>
-          <a href="https://developers.cloudflare.com/workers/platform/routes/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://developers.cloudflare.com/workers/platform/routes/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: '#f48120' }}
+          >
             Defining routes for Workers
           </a>
         </li>
       </ul>
 
       <Link href="/">
-        <button style={{
-          marginTop: '2rem',
-          padding: '0.5rem 1rem',
-          backgroundColor: '#f48120',
-          color: 'white',
-          border: 'none',
-          borderRadius: '4px',
-          cursor: 'pointer',
-          fontSize: '1rem',
-        }}>
+        <button
+          style={{
+            marginTop: '2rem',
+            padding: '0.5rem 1rem',
+            backgroundColor: '#f48120',
+            color: 'white',
+            border: 'none',
+            borderRadius: '4px',
+            cursor: 'pointer',
+            fontSize: '1rem',
+          }}
+        >
           ← Back to Index
         </button>
       </Link>
