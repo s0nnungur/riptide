@@ -16,8 +16,8 @@ export default function Question1() {
       <h2>Response</h2>
       <p className="response-block">
         Hi, José Miguel here from Cloudflare Support — thanks for reaching out!<br /><br />
-        Your domain isn’t using Cloudflare’s nameservers, so Cloudflare isn’t managing your DNS. This means any site access issues are likely caused by your current DNS provider or registrar.<br /><br />
-        Please check your domain’s nameserver settings and DNS records with your provider. If you want, I can help you switch your domain to use Cloudflare’s nameservers and manage your DNS here.<br /><br />
+        Your domain isn&apos;t using Cloudflare&apos;s nameservers, so Cloudflare isn&apos;t managing your DNS. This means any site access issues are likely caused by your current DNS provider or registrar.<br /><br />
+        Please check your domain&apos;s nameserver settings and DNS records with your provider. If you want, I can help you switch your domain to use Cloudflare&apos;s nameservers and manage your DNS here.<br /><br />
       </p>
 
       <h2>Thought Process</h2>
@@ -41,8 +41,8 @@ Name:    example.com
 Addresses: 96.7.128.175, 23.192.228.80, ...`}
       </pre>
       <ul style={{ marginBottom: '1rem' }}>
-        <li>"Server: Unknown" → DNS IP known, hostname unresolved</li>
-        <li>"Non-authoritative answer" → Info is cached</li>
+        <li>Server: Unknown → DNS IP known, hostname unresolved</li>
+        <li>Non-authoritative answer → Info is cached</li>
       </ul>
       <p>Conclusion: DNS is working — Cloudflare nameservers are up.</p>
 

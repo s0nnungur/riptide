@@ -18,10 +18,10 @@ export default function Question6() {
       <p className="response-block">
         <p>Hi! José Miguel from Cloudflare Support here.</p>
         <p>
-          You're right — Page Rules can’t match on user agent headers. But we can achieve this using a <strong>Single Redirect Rule</strong> in Cloudflare.
+          You're right — Page Rules can&apos;t match on user agent headers. But we can achieve this using a <strong>Single Redirect Rule</strong> in Cloudflare.
         </p>
         <p>
-          You’ll want to create a redirect rule where the condition is:<br />
+          You&apos;ll want to create a redirect rule where the condition is:<br />
           <code>http.user_agent contains "MSIE 8.0"</code><br />
           Then set your desired redirect target URL.
         </p>
@@ -29,7 +29,7 @@ export default function Question6() {
 
       <h2 style={{ color: '#404041' }}>Thought Process</h2>
       <p>
-        Page Rules don’t support matching against request headers like user-agent. Knowing that, I looked into the <a href="https://developers.cloudflare.com/rules/url-forwarding/" target="_blank" rel="noopener noreferrer" style={{ color: '#f48120' }}>Redirect Rules</a> feature under Cloudflare Rules.<br /><br />
+        Page Rules don&apos;t support matching against request headers like user-agent. Knowing that, I looked into the <a href="https://developers.cloudflare.com/rules/url-forwarding/" target="_blank" rel="noopener noreferrer" style={{ color: '#f48120' }}>Redirect Rules</a> feature under Cloudflare Rules.<br /><br />
         Since this is a static condition and not something dynamic or needing complex logic, a Single Redirect works best. 
       </p>
 

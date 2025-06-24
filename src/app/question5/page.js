@@ -17,9 +17,9 @@ export default function Question5() {
         <h2 style={{ color: '#404041' }}>Response</h2>
         <p className="response-block">
         Hi! José Miguel from Cloudflare Support here.<br /><br />
-        When Cloudflare doesn’t cache your content, it’s usually because your origin server is sending response headers telling Cloudflare not to cache (like <code>Cache-Control: no-store, no-cache</code>). These headers instruct both browsers and Cloudflare to avoid caching the content.<br /><br />
-        We can adjust these headers to allow caching or use Cloudflare’s Cache Rules to override them and enable caching at the edge.<br /><br />
-        If you want Cloudflare to cache content regardless of the origin’s headers, we can set up Cache Rules or use the <code>Cloudflare-CDN-Cache-Control</code> header on your server.
+        When Cloudflare doesn&apos;t cache your content, it&apos;s usually because your origin server is sending response headers telling Cloudflare not to cache (like <code>Cache-Control: no-store, no-cache</code>). These headers instruct both browsers and Cloudflare to avoid caching the content.<br /><br />
+        We can adjust these headers to allow caching or use Cloudflare&apos;s Cache Rules to override them and enable caching at the edge.<br /><br />
+        If you want Cloudflare to cache content regardless of the origin&apos;s headers, we can set up Cache Rules or use the <code>Cloudflare-CDN-Cache-Control</code> header on your server.
       </p>
 
       <h2 style={{ color: '#404041' }}>Thought Process</h2>

@@ -17,7 +17,7 @@ export default function Question2() {
       <h2>Response</h2>
       <p className="response-block">
         Hi, José Miguel here from Cloudflare Support — thanks for reaching out!<br /><br />
-        Cloudflare routes traffic based on speed and availability, not just geographic distance. So while you’re in London, routing through California can happen temporarily depending on network conditions.<br /><br />
+        Cloudflare routes traffic based on speed and availability, not just geographic distance. So while you&apos;re in London, routing through California can happen temporarily depending on network conditions.<br /><br />
         This is expected and helps ensure your site stays fast and stable.
       </p>
 

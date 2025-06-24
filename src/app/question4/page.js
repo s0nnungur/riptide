@@ -17,8 +17,8 @@ export default function Question4() {
       <h2>Response</h2>
       <p className="response-block">
         Hi there, José Miguel from Cloudflare Support!<br /><br />
-        Cloudflare’s nameservers host your DNS settings. Google DNS and OpenDNS don’t host anything — they just look up DNS records to help users reach your site.<br /><br />
-        If you point your nameservers to Cloudflare, Cloudflare becomes your DNS provider. That means you’ll want to make sure all your DNS records (like A or CNAME records) are correctly added to Cloudflare.
+        Cloudflare&apos;s nameservers host your DNS settings. Google DNS and OpenDNS don&apos;t host anything — they just look up DNS records to help users reach your site.<br /><br />
+        If you point your nameservers to Cloudflare, Cloudflare becomes your DNS provider. That means you&apos;ll want to make sure all your DNS records (like A or CNAME records) are correctly added to Cloudflare.
       </p>
 
       <h2>Thought Process</h2>
@@ -26,16 +26,16 @@ export default function Question4() {
       <h3>What I gathered through research</h3>
       <ul>
         <li><strong>Cloudflare Nameservers</strong> are authoritative — meaning they answer DNS queries based on the records you configure in Cloudflare.</li>
-        <li><strong>Google DNS / OpenDNS</strong> are public resolvers — they retrieve DNS info, but don’t manage your DNS settings themselves.</li>
+        <li><strong>Google DNS / OpenDNS</strong> are public resolvers — they retrieve DNS info, but don&apos;t manage your DNS settings themselves.</li>
       </ul>
 
       <h3>Common scenario</h3>
       <p>
-        I looked into how Cloudflare works when hosting providers are involved. It’s common to host a site elsewhere but still delegate DNS to Cloudflare. In that case, users should:
+        I looked into how Cloudflare works when hosting providers are involved. It&apos;s common to host a site elsewhere but still delegate DNS to Cloudflare. In that case, users should:
       </p>
       <ol>
-        <li>Change their domain’s nameservers at the registrar to the ones Cloudflare provides</li>
-        <li>Add matching DNS records in Cloudflare that point to their host’s IP address</li>
+        <li>Change their domain&apos;s nameservers at the registrar to the ones Cloudflare provides</li>
+        <li>Add matching DNS records in Cloudflare that point to their host&apos;s IP address</li>
       </ol>
 
       <h3>Partial (CNAME) Setup</h3>
