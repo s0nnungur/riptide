@@ -1,29 +1,36 @@
 # Riptide
 
-Riptide is a small HTML/CSS project created to present troubleshooting content in a clear and structured way.
+Riptide is a small static website built with HTML and CSS to present technical troubleshooting scenarios in a clear, structured format.
 
-## Purpose
+## Overview
 
-The goal of this project was to build a simple static website that organizes support information into separate sections/pages, making technical guidance easier to navigate and read.
+This project was created to organize support-style questions and answers into separate pages with simple navigation and readable presentation.
+
+The live site currently includes multiple Cloudflare support-inspired troubleshooting prompts covering topics such as DNS, caching, Workers, nameservers, and redirects.
 
 ## Stack
 
 - HTML
 - CSS
+- Cloudflare Pages
 
 ## Structure
 
-- `index.html` – main landing page
-- `question1.html` to `question6.html` – separate troubleshooting/content pages
-- `styles/` – stylesheet assets
+- `index.html` – landing page
+- `question1.html` to `question6.html` – individual scenario pages
+- `styles/` – styling assets
 
 ## What I focused on
 
-- Clear page structure
-- Simple navigation
+- Clear navigation between pages
 - Readable presentation of technical content
-- Basic frontend organization using static files
+- Simple static site structure
+- User-facing organization of troubleshooting material
+
+## Live Demo
+
+[View the live site](https://riptide-25y.pages.dev/)
 
 ## Notes
 
-This project is intentionally simple and was built as a practical exercise in structuring support-oriented content for users.
+This project is intentionally simple and was built as a practical frontend exercise around structured technical support content.
